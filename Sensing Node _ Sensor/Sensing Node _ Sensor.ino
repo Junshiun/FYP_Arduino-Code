@@ -79,12 +79,12 @@ float senseValue()
   sensorValue = 0;
   for (int i = 0; i < extraBit; i++) {
     sensorValue = analogRead(analogInPin) + sensorValue - 30;
-    delay(3);   // needs 2 ms for the analog-to-digital converter to settle after the last reading
+    delay(3);   
   }
 
   Calculation = ((float) sensorValue / extraBit / 1024 * Vref / resValue * 1000000) / Sf;
 
-  delay(218);  //1 second – 3ms*256ms (each adc read)-14ms (for printing)= 218ms
+  delay(218); 
   Serial.println(Calculation);
   return (Calculation);
 }
