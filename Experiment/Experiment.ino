@@ -1,5 +1,5 @@
 const int analogInPin = A0;  // Analog input pin that the sensor is attached to
-const int resValue = 10000;  // Value of 10kOhm resistor !change this to match your resistor
+const int resValue = 10000;  // Value of 10kOhm resistor
 const float Vref = 1.1;  //This is the voltage of the internal reference
 
 const float Sf = 0.6; // sensitivity in uA/ppm,
@@ -23,7 +23,7 @@ void loop() {
   analogWrite(3, 168);
   for (int i = 0; i < extraBit; i++) {
     sensorValue = analogRead(analogInPin) + sensorValue -30;
-    delay(3);   // needs 2 ms for the analog-to-digital converter to settle after the last reading
+    delay(3);  
   }
 
   //Serial.print("DATA, TIME, "); 
@@ -35,6 +35,6 @@ void loop() {
   //Serial.print("\tCounts = " );
   //Serial.println(sensorValue);
   
-  //Trying to make each loop 1 second
-  delay(218);  //1 second – 3ms*256ms (each adc read)-14ms (for printing)= 218ms
+  
+  delay(218);  
 }
