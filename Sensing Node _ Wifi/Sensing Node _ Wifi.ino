@@ -3,11 +3,11 @@
 #include <NTPClient.h>
 #include <WiFiUdp.h>
 
-#define FIREBASE_HOST "fyp1-5b7dc.firebaseio.com"
-#define FIREBASE_AUTH "GwiXlJeMIXq6c4TaHx2nkBmC14AY2Eh4aboqXhTd"
+#define FIREBASE_HOST "xxx"
+#define FIREBASE_AUTH "xxx"
 
-#define WIFI_SSID "Avengers"
-#define WIFI_PASSWORD "12345678"
+#define WIFI_SSID "xxx"
+#define WIFI_PASSWORD "xxx"
 
 float sensedVal;
 
